@@ -1,0 +1,20 @@
+{
+  "name": "rajinha92/model-generator",
+  "description": "This package reads a database and generate Models and Migrations",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rafael Conrado Farias",
+      "email": "rafael.conrado.farias@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Rafael\\ModelGenerator\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7",
+    "laravel/framework": "^5.2"
+  }
+}

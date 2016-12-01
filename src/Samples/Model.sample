@@ -1,0 +1,20 @@
+<?php
+
+namespace {app_name}{namespace};
+
+use Illuminate\Database\Eloquent\Model;
+{softDeleteImport}
+
+class {model_name} extends Model
+{
+    {softDelete}
+    protected $table = '{table_name}';
+    protected $primaryKey = '{primary_key}';
+    public $dates = [{dates}];
+    public $timestamps = {timestamps};
+    protected $fillable = [
+        {fillable}
+    ];
+
+    {relations}
+}

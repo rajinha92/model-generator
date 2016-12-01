@@ -1,0 +1,4 @@
+public function {referenced_name}()
+    {
+        return $this->belongsTo({referenced_model_name}::class, '{column_name}');
+    }
