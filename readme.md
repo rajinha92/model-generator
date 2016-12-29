@@ -2,9 +2,16 @@
 
 This package generates models and migrations (including FK migrations)
 
+
+## Service Provider
+
+```php
+\Rafael\ModelGenerator\GeneratorServiceProvider::class,
+```
+
 ## artisan command
 
-```bash
+```shell
 php artisan generate:model --migration --namespace=Models
 ```
 
