@@ -23,6 +23,16 @@ class StringHelper
         return ucfirst(str_singular(camel_case($name)));
     }
 
+    /**
+     * make name plural snake case
+     * @param $name
+     * @return string
+     */
+    public function make_table_name($name)
+    {
+        return str_plural(snake_case($name));
+    }
+
 
     /**
      * replace all $replacement keys by $replacement values in $content

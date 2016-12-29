@@ -76,7 +76,7 @@ class ModelGenerator implements Generator
             '{app_name}' => $this->app_name,
             '{namespace}' => $this->namespace ? '\\' . $this->namespace : '',
             '{model_name}' => $model_name,
-            '{table_name}' => $table_name->TABLE_NAME,
+            '{table_name}' => StringHelper::make_table_name($table_name->TABLE_NAME),
             '{primary_key}' => 'id', //TODO: get by parameter
             '{timestamps}' => '',
             '{softDeleteImport}' => '',
